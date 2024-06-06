@@ -9,10 +9,9 @@ gem "puma", ">= 5.0"
 gem "importmap-rails"
 gem "turbo-rails"
 gem "stimulus-rails"
-# gem "jbuilder"
-gem "redis", "~> 4.0"
 gem "faker", "~> 3.2"
 gem "pagy", "~> 6.0"
+gem "will_paginate", "~> 4.0"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri ]

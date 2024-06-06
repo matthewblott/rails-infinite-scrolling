@@ -1,12 +1,15 @@
-<p style="color: green"><%= notice %></p>
 <h1>Posts</h1>
-<%== pagy_nav(@pagy) %>
-<%# Will render 10 out of 100 posts on initial page load. %>
+
 <%= turbo_frame_tag :posts do %>
-  <%= render @posts %>
+  <%#= render @posts %>
+
+  <% @posts.each do |post| %>
+    <%= render "post", post: post %>
+  <% end %>
+
 <% end %>
-<%= turbo_frame_tag :pagination, 
+
+<%= turbo_frame_tag :frame_identifier, 
   loading: :lazy,
   src: posts_path(format: :turbo_stream, page: @pagy.next)
-  %>
-<%= link_to "New post", new_post_path %>
+%>
