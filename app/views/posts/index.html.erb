@@ -1,12 +1,9 @@
 <h1>Posts</h1>
 
-<%= turbo_frame_tag :posts do %>
-  <%#= render @posts %>
-
+<%= turbo_frame_tag :foo do %>
   <% @posts.each do |post| %>
     <%= render "post", post: post %>
   <% end %>
-
 <% end %>
 
 <%= turbo_frame_tag :frame_identifier, 
