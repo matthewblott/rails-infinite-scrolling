@@ -1,5 +1,9 @@
 <h1>Posts</h1>
 
+<controls>
+  <%= link_to "New", new_post_path(@post), role: "button" %>
+</controls>
+
 <%= turbo_frame_tag :foo do %>
   <% @posts.each do |post| %>
     <%= render "post", post: post %>

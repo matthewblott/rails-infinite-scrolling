@@ -1,15 +1,32 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('_styles.css');
+@import url('_color-schemes.css');
+@import url('_document.css');
+@import url('_accessibility-user-interaction.css');
+@import url('_accordion-details.css');
+@import url('_basics-form-elements.css');
+@import url('_button.css');
+@import url('_card-article.css');
+@import url('_checkboxes-radios-and-switches.css');
+@import url('_code.css');
+@import url('_embedded-content.css');
+@import url('_figure.css');
+@import url('_group-rolegroup-rolesearch.css');
+@import url('_input-type-color.css');
+@import url('_input-type-datetime.css');
+@import url('_input-type-file.css');
+@import url('_input-type-range.css');
+@import url('_input-type-search.css');
+@import url('_landmarks.css');
+@import url('_link.css');
+@import url('_loading-aria-busytrue.css');
+@import url('_miscs.css');
+@import url('_modal-dialog.css');
+@import url('_nav.css');
+@import url('_progress.css');
+@import url('_reduce-motion-features.css');
+@import url('_section.css');
+@import url('_table.css');
+@import url('_tooltip-data-tooltip.css');
+@import url('_typography.css');
+@import url('_menu.css');
+@import url('_form.css');

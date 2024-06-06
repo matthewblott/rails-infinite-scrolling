@@ -1,9 +1,8 @@
-<h1>New post</h1>
+<h1>New Post</h1>
 
-<%= render "form", post: @post %>
+<controls>
+  <%= button_tag "Create", form: "post_form", formaction: posts_path(@post) %>
+  <%= link_to "Back", posts_path, role: "button" %>
+</controls>
 
-<br>
-
-<div>
-  <%= link_to "Back to posts", posts_path %>
-</div>
+<%= render "form", disabled: false %>
