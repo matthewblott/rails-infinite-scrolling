@@ -16,5 +16,6 @@ gem "will_paginate", "~> 4.0"
 group :development, :test do
   gem "debug", platforms: %i[ mri ]
   gem "web-console"
+  gem "hotwire-livereload", "~> 1.3"
 end
 
