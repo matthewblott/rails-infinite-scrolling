@@ -1,14 +1,13 @@
-<%= turbo_frame_tag :pagination do %>
-  <% post_view_models.each do |post| %>
+<%= turbo_frame_tag "pagination_#{pagy.page}" do %>
+  <% view_models.each do |post| %>
     <%= render partial: "simpler/post", locals: { post: post } %>
   <% end %>
 
   <% if pagy.next %>
-    <%= turbo_frame_tag :pagination, 
+    <%= turbo_frame_tag "pagination_#{pagy.next}",
         src: simpler_index_path(page: pagy.next),
         loading: "lazy" do %>
       Loading more...
     <% end %>
   <% end %>
 <% end %>
-

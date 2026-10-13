@@ -10,7 +10,7 @@
   <%= render @posts %>
   
   <% if @pagy.next %>
-    <%= turbo_frame_tag :pagination, 
+    <%= turbo_frame_tag "pagination_#{@pagy.next}", 
         src: posts_path(page: @pagy.next),
         loading: "lazy" do %>
       Loading more...
